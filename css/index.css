@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Ubuntu:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --basic-color: #ffd297;
+    --text-color: #474747;
+    --secondary-text-color: #ff8800;
+    --footer-background-color: #1b1613;
+    --title-font: 'Ubuntu', serif;
+    --paragraph-font: 'Raleway', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto; 
+}
+
+.main-foto {
+    background: url(../img/main-foto.webp);
+    height: 100vh; 
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: var(--text-color);
+}
+
+.shadow-box {
+    background-color: #47474760;
+    height: 50px;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.main-nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.nav-link{
+    list-style-type: none;
+    
+}
+
+.color-link{
+    text-decoration: none;
+    color: #FFF;  
+}
+
+.logo-img {
+    border-color: #FFF;
+    border: solid #FFF;
+}
+.logo-img-text  {
+    color: #FFF;
+
+    text-align: center;
+}
+
+.logo-img-text-title {
+    color: rgb(9, 255, 0);
+    font-family: var(--title-font);
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+}
