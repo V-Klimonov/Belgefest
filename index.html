@@ -1,40 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ТЦ Белгефест</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
     <header>
-        <div class="main-foto">
-            <div class="shadow-box">
-                <div class="running-line"></div>
-                <div class="navbar-menu">
-                    <ul class="navbar-links container">
-                        <div class="logo-img">
-                            <div class="logo-img-text">Торговый центр</div>
-                            <div class="logo-img-text-title">Белгефест</div>
-                        </div>
-                        <div class="main-nav-link">
-                            <li class="about-us-link nav-link"><a href="#" class="color-link">О Нас</a></li>
-                            <li class="shops-link nav-link"><a href="#" class="color-link">Магазины</a></li>
-                            <li class="beauty-and-heals nav-link"><a href="#" class="color-link">Красота и здоровье</a></li>
-                            <li class="workshops-link nav-link"><a href="#" class="color-link">Мастерские по ремонту</a></li>
-                            <li class="for-renter nav-link"><a href="#" class="color-link">Арендаторам</a></li>
-                            <li class="vacancy-link nav-link"><a href="#" class="color-link">Вакансии</a></li>
-                            <li class="contacts nav-link"><a href="#" class="color-link">Контакты</a></li>
-                        </div>
+        <div class="shadow-box">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo-img-text">Торговый центр</div>
+                    <div class="logo-img-text-title">Белгефест</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle color-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> О нас </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item color-link" href="#">О нас</a>
+                                <a class="dropdown-item color-link" href="#">Контакты</a>
+                                <a class="dropdown-item color-link" href="#">Вакансии</a>
+                                <a class="dropdown-item color-link" href="#">Арендаторам</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle color-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Магазины </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item color-link" href="#">Беловежский</a>
+                                <a class="dropdown-item color-link" href="#">Строительные материалы</a>
+                                <a class="dropdown-item color-link" href="#">Электро инструмент</a>
+                                <a class="dropdown-item color-link" href="#">Сантехника</a>
+                                <a class="dropdown-item color-link" href="#">Бытовая техника</a>
+                                <a class="dropdown-item color-link" href="#">Мобильные телефоны</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle color-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Красота и здоровье </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item color-link" href="#">Кабинет УЗД</a>
+                                <a class="dropdown-item color-link" href="#">Стоматологический кабинет</a>
+                                <a class="dropdown-item color-link" href="#">Парикмахерская</a>
+                                <a class="dropdown-item color-link" href="#">Маникюрный салон</a>
+                                <a class="dropdown-item color-link" href="#">Визаж</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle color-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Мастерские по ремонту </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item color-link" href="#">Ремонт телевизоров</a>
+                                <a class="dropdown-item color-link" href="#">Ремонт мобильных телефонов</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  color-link" href="#">Арендаторам</a>
+                        </li>
                     </ul>
+                    
                 </div>
-            </div>
+            </nav>
         </div>
+    <marquee class="color-link" behavior="scroll" direction="left">Сдаются в аренду помещения от 15 до 200 м.кв. По вопросам аренды обращайтесь по тел. 8 01632 932 71</marquee>
+    <div class="main-foto"></div>
     </header>
     <main>
+        <section class="categorys-tc">
+            <div class="wrapper-tc container">
+                <div class="icon-and-title-category">
+                    <img src="img/bud-m.webp" class="small-icon" alt="building materials">
+                    <span class="title-category">Стройматериалы</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/el-instr.webp" class="small-icon" alt="electric tool">
+                    <span class="title-category">Электроинструмент</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/smesiteli.webp" class="small-icon" alt="smesitel">
+                    <span class="title-category">Сантехника</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/belmoris.webp" class="small-icon" alt="belmoris">
+                    <span class="title-category">ОАО Беловежский</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/tech.webp" class="small-icon" alt="tech">
+                    <span class="title-category">Бытовая техника</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/mobile.webp" class="small-icon" alt="mobile-phones">
+                    <span class="title-category">Мобильные телефоны </span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/uzd.webp" class="small-icon" alt="clinic">
+                    <span class="title-category">Кабинет УЗД</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/smile.webp" class="small-icon" alt="smile">
+                    <span class="title-category">Стоматологический кабинет</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/barber.webp" class="small-icon" alt="barber">
+                    <span class="title-category">Парикмахерская</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/manicure.webp" class="small-icon" alt="manicure">
+                    <span class="title-category">Маникюрный кабинет</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/lash.webp" class="small-icon" alt="lash">
+                    <span class="title-category">Визаж</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/fix-tv.webp" class="small-icon" alt="tv">
+                    <span class="title-category">Ремонт телевизоров</span>
+                </div>
+                <div class="icon-and-title-category">
+                    <img src="img/mobile.webp" class="small-icon" alt="mobile-phones">
+                    <span class="title-category">Ремонт мобильных телефонов</span>
+                </div>
+            </div>
+        </section>
+        <section class="shops-info">
+            <div class="shops-img">
+                <h2 class="title-category-text">Магазины</h2>
+            </div>
+
+
+            
+        </section>
     </main>
     <footer></footer>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
