@@ -1,192 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600&family=Rubik&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --basic-color: #f6f0e9;
-    --text-color: #474747;
-    --secondary-text-color: #ff8800;
-    --footer-background-color: #1b1613;
-    --title-font: 'Open Sans', serif;
-    --paragraph-font: 'Open Sans', sans-serif;
-    /* scroll-behavior: smooth; */
+  --basic-color: #f6f0e9;
+  --text-color: #c5af93;
+  --secondary-text-color: #ff8800;
+  --footer-background-color: #1b1613;
+  --title-font: "Open Sans", serif;
+  --paragraph-font: "Open Sans", sans-serif;
+  /* scroll-behavior: smooth; */
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto; 
+  max-width: 1200px;
+  margin: auto;
 }
 
 .main-foto {
-    background: url(../img/main-foto.webp);
-    height: 50vh; 
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
+  background: url(../img/main-foto.webp);
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
-    .main-foto {
-    height: 70vh; 
-    }
+  .main-foto {
+    height: 70vh;
+  }
 }
 
 @media (min-width: 992px) {
-    .main-foto {
-    height: 80vh; 
-    }
+  .main-foto {
+    height: 80vh;
+  }
 }
 
-.shadow-box, .categorys-tc, .shops-info {
-    background-color: var(--basic-color);
+.shadow-box,
+.categorys-tc,
+.shops-info {
+  background-color: var(--basic-color);
 }
 
 .categorys-tc {
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .main-nav-link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* margin: 20px 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin: 20px 10px; */
 }
 
-.nav-link{
-    list-style-type: none;
-    margin: 10px 7px;
+.nav-link {
+  list-style-type: none;
+  margin: 10px 7px;
 }
 
-.color-link, .title-category{
-    font-family: var(--title-font);
-    font-weight: bold;
-    color: #3f3e3e;  
+.color-link,
+.title-category {
+  font-family: var(--title-font);
+  font-weight: bold;
+  color: #3f3e3e;
 }
 
-.logo-img-text  {
-    color: #3f3e3e;
-    font-family: Rubik;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
+.logo-img-text {
+  color: #3f3e3e;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
 }
 
 .logo-img-text-title {
-    color: #ff3300;
-    font-family: Alice;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
+  color: #ff3300;
+  font-family: Alice;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }
 
 .icon-and-title-category {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .small-icon {
-    width: 70px;
-    border-radius: 50%;
-    border-color: var(--basic-color); /* Цвет границы */
-    border-style: solid; /* Стиль границы */
-    padding: 3px; /* Поля вокруг текста */
+  width: 70px;
+  border-radius: 50%;
+  border-color: var(--text-color);
+  border-style: solid;
+  padding: 3px;
 }
 
 .title-category {
-	position: relative;
-	color: var(--text-color)!important; /*задаём цвет ссылки*/
-	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none!important; /*убираем подчёркивание*/
-    margin-left: 20px;
+  position: relative;
+  color: var(--text-color) !important;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none !important;
+  margin-left: 20px;
 }
 .title-category:after {
-	display: block;
-	position: absolute;
-    text-decoration: none;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0px;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #ada8a2; /*задаём цвет линии*/
-	content: "";
-    color: #3f3e3e!important;
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: #ada8a2;
+  content: "";
+  color: #3f3e3e !important;
+  transition: width 0.3s ease-out;
 }
 
 .title-category:hover:after,
 .title-category:focus:after {
-    text-decoration: none;
-    color: #3f3e3e!important;
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  text-decoration: none;
+  color: #3f3e3e !important;
+  width: 100%;
 }
 
 .wrapper-tc {
-    height: 90%;
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
+  height: 90%;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
-    .wrapper-tc {
-        grid-template-columns: 1fr 1fr;
-    }
+  .wrapper-tc {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .inner-tc {
-    background-color: #fff;
-    margin: 10px;
-    padding: 0 20px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 0 20px;
 }
 .shops-img {
-    background: url(../img/shops.webp);
-    height: 30vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: url(../img/shops.webp);
+  height: 30vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-category-text {
-    text-align: center;
-    color: #fff;
-    font-family: Rubik;
-    font-weight: bold;
+  text-align: center;
+  color: #fff;
+  font-family: Rubik;
+  font-weight: bold;
 }
-
-/* .img-carousel-size {
-    height: 300px;
-} */
 
 #carouselShops {
-    margin: 30px 0;
+  padding: 30px 0;
 }
 
+
 .carousel-img-w {
-    border-color: var(--basic-color); 
-    border-style: solid;
-    padding: 5px; 
-    height: 80%;
+  border-color: var(--text-color);
+  border-style: solid;
+  padding: 5px;
+  height: 270px;
+  margin-top: 15px;
 }
 
 .slide-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #fff;
-    width: 80%;
-    height: 50vh;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 80%;
+  height: 80vh;
+  margin: auto;
 }
 .slide-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Open Sans", serif;
+  color: #3f3e3e;
+}
+
+.slide-title-text {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  .carousel-img-w {
+    height: 60%;
+  }
+  .slide-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 50vh;
+  }
+  .slide-text-box {
     width: 50%;
     padding-right: 20px;
+    text-align: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-img-w {
+    height: 80%;
+  }
+
+   .slide-box {
+    height: 60vh;
+  }
+}
+
+.button-info {
+    background-color: var(--text-color);
+    color: #fff;   
+    text-align: center;
+    text-decoration: none;
+    font-family: Rubik;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 14px 26px;
+    margin: 5px 10px;
+    width: 50%;
+}
+
+.button-info:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: #fff;
+}
+
+.clock-img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.working-hours {
+    display: flex;
+    flex-direction: row;
 }
