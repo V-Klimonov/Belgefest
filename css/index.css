@@ -13,7 +13,7 @@
   --footer-background-color: #1b1613;
   --title-font: "Open Sans", serif;
   --paragraph-font: "Open Sans", sans-serif;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -27,6 +27,18 @@
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  text-align: center;
+  font-family: var(--title-font);
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -141,6 +153,7 @@
 
 .inner-tc {
   background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
   margin: 10px;
   padding: 0 20px;
 }
@@ -167,6 +180,9 @@
   padding: 30px 0;
 }
 
+.carousel-inner {
+  margin-bottom: 20px;
+}
 
 .carousel-img-w {
   border-color: var(--text-color);
@@ -182,7 +198,7 @@
   align-items: center;
   background-color: #fff;
   width: 80%;
-  height: 80vh;
+  /* height: 80vh; */
   margin: auto;
 }
 .slide-text-box {
@@ -193,11 +209,13 @@
   padding-bottom: 20px;
   text-align: center;
   font-family: "Open Sans", serif;
+  font-size: 80%;
   color: #3f3e3e;
 }
 
 .slide-title-text {
     font-weight: bold;
+    font-size: 150%;
     color: var(--text-color);
 }
 
@@ -214,36 +232,18 @@
     width: 50%;
     padding-right: 20px;
     text-align: start;
+    font-size: 1em;
   }
 }
 
 @media (min-width: 992px) {
   .carousel-img-w {
-    height: 80%;
+    height: 70%;
   }
 
    .slide-box {
     height: 60vh;
   }
-}
-
-.button-info {
-    background-color: var(--text-color);
-    color: #fff;   
-    text-align: center;
-    text-decoration: none;
-    font-family: Rubik;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 14px 26px;
-    margin: 5px 10px;
-    width: 50%;
-}
-
-.button-info:hover {
-    opacity: 0.8;
-    text-decoration: none;
-    color: #fff;
 }
 
 .clock-img {
@@ -254,4 +254,8 @@
 .working-hours {
     display: flex;
     flex-direction: row;
+}
+
+.carousel-ind-marg {
+    margin-top: 20px;
 }

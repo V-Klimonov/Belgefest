@@ -1,0 +1,36 @@
+.button-info {
+    background-color: var(--text-color);
+    color: #fff;   
+    text-align: center;
+    text-decoration: none;
+    font-family: Rubik;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 14px 26px;
+    margin: 5px 10px;
+    width: 50%;
+}
+
+.button-info:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-admin-info {
+    color: #fff;
+    text-decoration: none;
+    font-family: Rubik;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 14px 26px;
+    margin: 5px 10px;
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+.button-admin-info:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #c5af93;
+}
