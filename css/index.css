@@ -55,7 +55,9 @@
 
 .shadow-box,
 .categorys-tc,
-.shops-info, .heals-and-beauty-info {
+.shops-info,
+.heals-and-beauty-info,
+.equipment-repair-workshops {
   background-color: var(--basic-color);
 }
 
@@ -73,6 +75,12 @@
 .nav-link {
   list-style-type: none;
   margin: 10px 7px;
+}
+
+.icon-and-title-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .color-link,
@@ -151,13 +159,16 @@
   }
 }
 
-.inner-tc {
+.inner-tc,
+.repair-workshops-inner {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
   margin: 10px;
   padding: 0 20px;
 }
-.shops-img, .heals-and-beauty-img {
+.shops-img,
+.heals-and-beauty-img,
+.repair-workshops-img {
   background: url(../img/shops.webp);
   height: 30vh;
   background-attachment: fixed;
@@ -176,7 +187,8 @@
   font-weight: bold;
 }
 
-#carouselShops, #carouselBeauty {
+#carouselShops,
+#carouselBeauty {
   padding: 30px 0;
 }
 
@@ -213,10 +225,11 @@
   color: #3f3e3e;
 }
 
-.slide-title-text {
-    font-weight: bold;
-    font-size: 150%;
-    color: var(--text-color);
+.slide-title-text,
+.box-title-text {
+  font-weight: bold;
+  font-size: 150%;
+  color: var(--text-color);
 }
 
 @media (min-width: 768px) {
@@ -241,25 +254,62 @@
     height: 70%;
   }
 
-   .slide-box {
+  .slide-box {
     height: 60vh;
   }
 }
 
 .clock-img {
-    width: 15px;
-    margin-right: 10px;
+  width: 15px;
+  margin-right: 10px;
 }
 
 .working-hours {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .carousel-ind-marg {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* .heals-and-beauty-img {
     background-image: url();
 } */
+
+.repair-workshops-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  width: 80vw;
+}
+
+.repair-workshops-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repair-workshops-photo {
+  width: 100%;
+}
+
+.workshop-text-box {
+  padding: 10px;
+}
+
+.workshop-text-box-wrapper {
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .repair-workshops-inner {
+    flex-direction: row;
+  }
+  .repair-workshops-photo {
+    width: 50%;
+  }
+}
