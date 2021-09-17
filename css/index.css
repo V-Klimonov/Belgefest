@@ -233,6 +233,7 @@
   font-weight: bold;
   font-size: 150%;
   color: var(--text-color);
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -338,8 +339,13 @@
   font-family: "Open Sans", serif;
   font-weight: bold;
   color: #3f3e3e;
+  margin-top: 15px;
 }
-  
+
+.footer-contacts-title{
+  text-align: center;
+}
+
 .phone-number-box {
   display: flex;
   flex-direction: column;
@@ -370,6 +376,10 @@ iframe {
     height: 40vh;
     margin: 20px;
   }
+
+  .contacts-footer {
+  margin-top: 20px;
+}  
 }
 
 @media (min-width: 992px) {
@@ -404,8 +414,10 @@ iframe {
   .footer-nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
   .footer-nav-links {
     flex-direction: row;
+    text-align: center;
   }
 }
