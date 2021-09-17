@@ -85,7 +85,8 @@
 }
 
 .color-link,
-.title-category, .footer-color-link {
+.title-category,
+.footer-color-link {
   font-family: var(--title-font);
   font-weight: bold;
   color: #3f3e3e;
@@ -303,6 +304,9 @@
 .workshop-text-box {
   padding: 10px;
   margin-bottom: 15px;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  color: #3f3e3e;
 }
 
 .workshop-text-box-wrapper {
@@ -330,14 +334,48 @@
   padding: 20px;
 }
 
-.map-tc {
+.contacts-footer {
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  color: #3f3e3e;
+}
+  
+.phone-number-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-number {
+  text-decoration: none;
+  color: #3f3e3e;
+}
+.phone-number:hover {
+  text-decoration: none;
+  color: #616060;
+}
+iframe {
   width: 100%;
-  height: 100%;
+  height: 50vh;
+  margin-top: 15px;
 }
 
 @media (min-width: 768px) {
   .contacts-map-wrapper {
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  iframe {
+    width: 80%;
+    height: 40vh;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  iframe {
+    width: 50%;
+    height: 50vh;
   }
 }
 
@@ -345,10 +383,25 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-around;
+}
+
+.footer-color-link {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.footer-color-link:hover {
+  text-decoration: none;
+  color: #3f3e3ebb;
+}
+
+.footer-brand-logo {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  .footer-nav{
+  .footer-nav {
     display: flex;
     flex-direction: row;
   }
