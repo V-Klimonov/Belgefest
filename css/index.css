@@ -57,7 +57,8 @@
 .categorys-tc,
 .shops-info,
 .heals-and-beauty-info,
-.equipment-repair-workshops {
+.equipment-repair-workshops,
+.footer-nav-menu {
   background-color: var(--basic-color);
 }
 
@@ -84,7 +85,7 @@
 }
 
 .color-link,
-.title-category {
+.title-category, .footer-color-link {
   font-family: var(--title-font);
   font-weight: bold;
   color: #3f3e3e;
@@ -160,7 +161,8 @@
 }
 
 .inner-tc,
-.repair-workshops-inner {
+.repair-workshops-inner,
+.repair-workshops-inner-s {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
   margin: 10px;
@@ -278,7 +280,8 @@
     background-image: url();
 } */
 
-.repair-workshops-inner {
+.repair-workshops-inner,
+.repair-workshops-inner-s {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,6 +302,7 @@
 
 .workshop-text-box {
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 .workshop-text-box-wrapper {
@@ -309,7 +313,46 @@
   .repair-workshops-inner {
     flex-direction: row;
   }
+
+  .repair-workshops-inner-s {
+    flex-direction: row-reverse;
+  }
+
   .repair-workshops-photo {
     width: 50%;
+  }
+}
+
+.contacts-map-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+.map-tc {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .contacts-map-wrapper {
+    flex-direction: row;
+  }
+}
+
+.footer-nav-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-nav{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-nav-links {
+    flex-direction: row;
   }
 }
