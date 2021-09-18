@@ -389,6 +389,14 @@ iframe {
   }
 }
 
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
 .footer-nav-links {
   display: flex;
   flex-direction: column;
@@ -410,12 +418,25 @@ iframe {
   text-decoration: none;
 }
 
+.decor-line {
+    height: 2px;
+    width: 25%;
+    background-color: #3f3e3ebb;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
+  .decor-line {
+    display: none;
+  }
+
   .footer-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px 0;
   }
+  
   .footer-nav-links {
     flex-direction: row;
     text-align: center;
