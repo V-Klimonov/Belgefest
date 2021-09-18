@@ -22,11 +22,12 @@
 }
 
 .main-photo {
-  background: url(../img/main-photo.webp);
-  height: 80vh;
+  background: url(../img/main-photo-m.webp);
+  height: 60vh;
+  
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
+  background-size:cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
