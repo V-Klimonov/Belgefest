@@ -21,9 +21,9 @@
   margin: auto;
 }
 
-.main-foto {
-  background: url(../img/main-foto.webp);
-  height: 50vh;
+.main-photo {
+  background: url(../img/main-photo-m.webp);
+  height: 80vh;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -42,8 +42,12 @@
 }
 
 @media (min-width: 768px) {
-  .main-foto {
-    height: 70vh;
+  .main-photo {
+    height: 90vh;
+    background: url(../img/main-photo.webp);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
@@ -342,7 +346,7 @@
   margin-top: 15px;
 }
 
-.footer-contacts-title{
+.footer-contacts-title {
   text-align: center;
 }
 
@@ -378,8 +382,8 @@ iframe {
   }
 
   .contacts-footer {
-  margin-top: 20px;
-}  
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -419,10 +423,10 @@ iframe {
 }
 
 .decor-line {
-    height: 2px;
-    width: 25%;
-    background-color: #3f3e3ebb;
-    margin-bottom: 20px;
+  height: 2px;
+  width: 25%;
+  background-color: #3f3e3ebb;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -436,7 +440,7 @@ iframe {
     justify-content: space-around;
     padding: 10px 0;
   }
-  
+
   .footer-nav-links {
     flex-direction: row;
     text-align: center;
