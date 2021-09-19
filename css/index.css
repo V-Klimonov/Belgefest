@@ -174,9 +174,7 @@
   margin: 10px;
   padding: 0 20px;
 }
-.shops-img,
-.heals-and-beauty-img,
-.repair-workshops-img {
+.shops-img {
   background: url(../img/shops.webp);
   height: 30vh;
   background-attachment: fixed;
@@ -188,6 +186,28 @@
   align-items: center;
 }
 
+.repair-workshops-img {
+  background: url(../img/repair-workshops.webp);
+  height: 30vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heals-and-beauty-img {
+  background: url(../img/beauty-heals.webp);
+  height: 30vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title-category-text {
   text-align: center;
   color: #fff;

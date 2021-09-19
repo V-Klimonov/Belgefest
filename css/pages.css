@@ -1,0 +1,18 @@
+.info-box-wrapper {
+  background-color: #f6f0e9;
+}
+
+.info-box-inner {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .info-box-inner {
+    flex-direction: row;
+  }
+  .info-box-text {
+    margin: 0 20px;
+  }
+}
