@@ -24,7 +24,6 @@
 .main-photo {
   background: url(../img/main-photo-m.webp);
   height: 60vh;
-  
   background-attachment: fixed;
   background-position: center center;
   background-size:cover;
@@ -40,6 +39,8 @@
   font-weight: bold;
   color: #fff;
   margin-bottom: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 @media (min-width: 768px) {
@@ -67,6 +68,11 @@
   background-color: var(--basic-color);
 }
 
+p, li {
+  font-family: "Open Sans", serif;
+  color: #3f3e3e;
+}
+
 .categorys-tc {
   padding-bottom: 30px;
 }
@@ -75,7 +81,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin: 20px 10px; */
 }
 
 .nav-link {
@@ -170,7 +175,7 @@
 .repair-workshops-inner,
 .repair-workshops-inner-s {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px;
   padding: 0 20px;
 }
@@ -303,10 +308,6 @@
 .carousel-ind-marg {
   margin-top: 20px;
 }
-
-/* .heals-and-beauty-img {
-    background-image: url();
-} */
 
 .repair-workshops-inner,
 .repair-workshops-inner-s {
