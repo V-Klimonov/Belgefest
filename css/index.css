@@ -46,7 +46,7 @@
 
 @media (min-width: 768px) {
   .main-photo {
-    height: 90vh;
+    height: 60vh;
     background: url(../img/main-photo.webp);
     background-attachment: fixed;
     background-position: center center;
