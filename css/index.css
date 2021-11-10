@@ -238,6 +238,12 @@ p, li {
   margin-top: 15px;
 }
 
+#carouselShops > div > div.carousel-item.active > div > div > p.discount-promotion {
+  text-align: center;
+  font-weight: bold;
+  color: #ff3300;
+}
+
 .slide-box {
   display: flex;
   flex-direction: column;
