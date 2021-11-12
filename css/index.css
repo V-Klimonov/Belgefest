@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600&family=Rubik&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,23 +17,39 @@
   scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
+
 
 .main-photo {
   background: url(../img/main-photo-m.webp);
   height: 40vh;
   background-attachment: fixed;
   background-position: center center;
-  background-size:cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.wrapper-info-for-tenants {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .wrapper-info-for-tenants {
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-for-tenants {
+    font-family: var(--title-font);
+    text-align: center;
+    color: #3f3e3e;
+  }
+}
 .main-title {
   text-align: center;
   font-family: var(--title-font);
@@ -69,7 +85,8 @@
   background-color: var(--basic-color);
 }
 
-p, li {
+p,
+li {
   font-family: "Open Sans", serif;
   color: #3f3e3e;
 }
@@ -113,7 +130,7 @@ p, li {
 
 .logo-img-text-title {
   color: #ff3300;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
@@ -172,14 +189,13 @@ p, li {
   }
 }
 
-.inner-tc,
-.repair-workshops-inner,
-.repair-workshops-inner-s {
+.inner-tc {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px;
-  padding: 0 20px;
+  padding-left: 20px;
 }
+
 .shops-img {
   background: url(../img/shops.webp);
   height: 30vh;
@@ -223,22 +239,23 @@ p, li {
 
 #carouselShops,
 #carouselBeauty {
-  padding: 30px 0;
+  padding: 30px 23px;
 }
 
 .carousel-inner {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-img-w {
   border-color: var(--text-color);
   border-style: solid;
   padding: 5px;
-  height: 270px;
+  width: 270px;
   margin-top: 15px;
 }
 
-#carouselShops > div > div.carousel-item.active > div > div > p.discount-promotion {
+p.discount-promotion {
   text-align: center;
   font-weight: bold;
   color: #ff3300;
@@ -249,9 +266,8 @@ p, li {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  width: 80%;
-  /* height: 80vh; */
   margin: auto;
+  height: 650px;
 }
 .slide-text-box {
   display: flex;
@@ -271,33 +287,25 @@ p, li {
   font-weight: bold;
   font-size: 150%;
   color: var(--text-color);
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .carousel-img-w {
-    height: 60%;
-  }
-  .slide-box {
-    display: flex;
-    flex-direction: row;
-    height: 50vh;
-  }
-  .slide-text-box {
-    width: 50%;
-    padding-right: 20px;
-    text-align: start;
-    font-size: 1em;
-  }
+  padding-bottom: 20px;
 }
 
 @media (min-width: 992px) {
   .carousel-img-w {
-    height: 70%;
+    margin: 0 20px;
+    width: 90%;
   }
 
   .slide-box {
-    height: 60vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+  }
+  .slide-text-box {
+   
+    padding-left: 20px;
+    text-align: center;
+    font-size: 1em;
   }
 }
 
@@ -323,7 +331,9 @@ p, li {
   align-items: center;
   text-align: center;
   padding: 0;
-  width: 80vw;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
 }
 
 .repair-workshops-wrapper {
@@ -395,7 +405,7 @@ p, li {
 }
 .phone-number:hover {
   text-decoration: none;
-  color: #616060;
+  color: #888787;
 }
 iframe {
   width: 100%;
@@ -479,7 +489,6 @@ iframe {
     text-align: center;
   }
 }
-
 
 .inst-icon {
   width: 40px;
